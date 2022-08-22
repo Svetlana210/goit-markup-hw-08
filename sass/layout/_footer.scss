@@ -1,0 +1,118 @@
+.footer-section {
+    background-color: var(--bg-accent-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.address {
+    margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__link_white {
+    color: var(--primary-white-color);
+    transition: color var(--transition-dur-cub);
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
+
+.address__link_grey {
+    color: var(--footer-contacts-color);
+    transition: color var(--transition-dur-cub);
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
+
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-container__social {
+    width: 206px;
+    margin-left: 70px;
+}
+.footer-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.social-footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-footer-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-footer-list__link {
+@extend %align;
+    width: 44px;
+    height: 44px;
+    color: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color var(--transition-dur-cub);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+}
+
+
+.social-footer-list__icon {
+    fill: currentColor;
+}
+
+.footer-container__form {
+    margin-left: auto;
+}
+
+.email-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.email-form__input {
+    margin-right: 12px;
+    padding: 15px 16px;
+    min-width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
+}
+.email-form__button {
+  @extend %align;
+    padding: 10px 28px;
+}
+
+.email-form__button-icon {
+    fill: #ffffff;
+    margin-left: 10px;
+}

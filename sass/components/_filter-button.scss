@@ -1,0 +1,35 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__button {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    color: var(--title-text-color);
+    background-color: var(--background-section-color);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    transition: color var(--transition-dur-cub), background-color var(--transition-dur-cub),
+        box-shadow var(--transition-dur-cub);
+        &:hover,
+        &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-text-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+         }
+}
+
+
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}

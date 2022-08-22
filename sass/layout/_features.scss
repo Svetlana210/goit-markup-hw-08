@@ -1,0 +1,36 @@
+.feature-icon {
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 4px;
+
+    background-color: var(--background-section-color);
+}
+
+.feature-title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+}
+
+.feature-list {
+    display: flex;
+}
+
+.feature-item {
+    min-width: 270px;
+}
+
+.feature-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-text {
+    line-height: 1.71;
+}
