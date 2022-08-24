@@ -1,9 +1,11 @@
-.clients-list {
+.clients__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.clients-link {
+.clients__link {
     @extend %align;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--icons-color);
     border-radius: 4px;
@@ -19,10 +21,17 @@
 }
 
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 768px){
+    .clients__link{
+        width: 226px;
+    }
+}
+@media screen and (min-width:1200px){
+    .clients__link {
+            width: 170px;
+        }
 }

@@ -10,11 +10,19 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/main-page/headerimg.jpg);
+        url(../images/main-page/mob/hero-mob.jpg);
     background-color: #2f303a;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media screen and (min-device-pixel-ratio:2) and (max-width:767px),
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width:767px) {
+    .overlay{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-page/mob/hero-mobx2.jpg);
+    }
 }
     
  .hero-section__title {
@@ -32,21 +40,39 @@
 
 @media screen and (min-width:768px){
     .overlay{
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/main-page/tabletimg.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-page/tablet/hero-tab.jpg);
    }
+}
+
+@media screen and (min-device-pixel-ratio:2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/main-page/tablet/hero-tabx2.jpg);
+    }
 }
 
 @media screen and (min-width:1200px){
     .hero-section {
-            padding: 200px 0;
+       padding: 200px 0;
         }
-                 .overlay {
-                     max-height: 600px;
+    .overlay {
+        max-height: 600px;
                      
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                 url(../images/main-page/bgimg.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+         url(../images/main-page/desktop/hero-desk.jpg);
 }
+@media screen and (min-device-pixel-ratio:2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/main-page/desktop/hero-deskx2.jpg);
+    }
+}
+
 .hero-section__title {
     min-width: 696px;
 

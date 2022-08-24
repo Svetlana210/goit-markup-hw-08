@@ -1,11 +1,16 @@
+@media screen and (max-width:1200px) {
+    .work{
+    display: none;
+}
+}
 .work {
     padding-top: 0;
 }
-.work-item {
+.work__item {
     position: relative;
 }
 
-.work-overlay {
+.work__item-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -25,7 +30,7 @@
     color: var(--primary-white-color);
 }
 
-.work-list {
+.work__list {
     display: flex;
     gap: 30px;
 }
