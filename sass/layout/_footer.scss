@@ -87,41 +87,10 @@
     }
 }
 
-
 .social-footer-list__icon {
     fill: currentColor;
 }
-// .address__item:not(:last-child) {
-//     margin-bottom: 9px;
-// }
 
-
-// .footer-container {
-//     display: flex;
-//     align-items: baseline;
-// }
-
-// .footer-container__social {
-//     width: 206px;
-//     margin-left: 70px;
-// }
-
-
-// .footer-container__form {
-//     margin-left: auto;
-// }
-
-// .email-form {
-    
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-// }
-
-// .footer-container__form{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
 .email-form{
     text-align: center;
 }
@@ -149,20 +118,61 @@
     margin-left: 10px;
     vertical-align: middle;
 }
-// .email-form__input {
-//     margin-right: 12px;
-//     padding: 15px 16px;
-//     min-width: 358px;
-//     background-color: transparent;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     border-radius: 4px;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     letter-spacing: 0.03em;
-//     color: rgba(255, 255, 255, 0.9);
-// }
-// .email-form__button {
-//   @extend %align;
-//     padding: 10px 28px;
-// }
+@media screen and (min-width:768px){
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+       
+    .footer-container__social{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .footer-container__form{
+            margin-top: 60px;
+        }
+}
+@media screen and (min-width:1200px){
+    .footer-container__address{
+        align-items: flex-start;
+    }
+    .address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    .address__item {
+        text-align: start;
+    }
+    .footer-container__social {
+        width: 206px;
+        margin-left: 70px;
+    }
+    .footer-title {
+        text-align: start;
+    }
+    .footer-container__form {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+.email-form {
+    display: block;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.email-form__input {
+    min-width: 358px;
+}
+.email-form__button {
+    margin-left: 12px;
+}
+}
