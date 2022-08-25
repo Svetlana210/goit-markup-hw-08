@@ -754,6 +754,11 @@ button {
     flex-grow: 1;
   }
 }
+@media screen and (min-width: 1200px) {
+  .project__card {
+    width: 370px;
+  }
+}
 .footer-section {
   background-color: var(--bg-accent-color);
   padding-top: 60px;
