@@ -97,7 +97,7 @@
 .email-form__input {
    margin-bottom: 20px;
     padding: 15px 16px;
-    min-width: 450px;
+    width: 100%;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -135,8 +135,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
+            width: 450px;
         }
+            
 
         .footer-container__form{
             margin-top: 60px;
@@ -168,9 +169,10 @@
     display: block;
     flex-direction: row;
     margin-top: 20px;
+    width:auto;
 }
 .email-form__input {
-    min-width: 358px;
+    width: 358px;
 }
 .email-form__button {
     margin-left: 12px;
