@@ -15,7 +15,7 @@
     transition: opacity var(--transition-dur-cub), visibility var(--transition-dur-cub);
 }
 .mobile-menu.is-open{
-opacity: 1;
+    opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
@@ -23,7 +23,7 @@ opacity: 1;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-left: 40px;
+    padding-left: 25px;
 }
 .mobile-menu__close-btn{
     position: absolute;

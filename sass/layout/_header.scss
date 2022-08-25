@@ -21,6 +21,8 @@
 .header-section{
     padding-top: 16px;
     padding-bottom: 16px;
+    height: 79px;
+        border-bottom: 1px solid var(--border-color);
 }
 @media screen and (min-width:768px){
     .mobile-menu-open{
@@ -37,8 +39,6 @@
     .header-section {
         padding-top: 0;
         padding-bottom: 0;
-        height: 79px;
-        border-bottom: 1px solid var(--border-color);
         }
     .nav__item:not(:last-child) {
         margin-right: 50px;

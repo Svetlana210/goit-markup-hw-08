@@ -103,11 +103,11 @@
         </div>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="section">
-        <div class="container"> -->
-    <!--скрытый заголовок-->
-    <!-- <h1 class="visually-hidden">Портфолио</h1>
+        <div class="container">
+          <!--скрытый заголовок-->
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter list">
             <li class="filter__item">
               <button type="button" class="filter__button">Все</button>
@@ -121,7 +121,7 @@
             <li class="filter__item">
               <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
@@ -129,14 +129,36 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/techno1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  /> -->
-    <!-- <p class="project__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port1-desk.jpg   1x,
+                        ./images/portfolio/desktop/port1-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port1-tab.jpg   1x,
+                        ./images/portfolio/tablet/port1-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port1-mob.jpg   1x,
+                        ./images/portfolio/mob/port1-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port1-mob.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
+                  <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
@@ -152,20 +174,42 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/basket2.jpg"
-                    alt="Постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port2-desk.jpg   1x,
+                        ./images/portfolio/desktop/port2-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port2-tab.jpg   1x,
+                        ./images/portfolio/tablet/port2-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port2-mob.jpg   1x,
+                        ./images/portfolio/mob/port2-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port2-mob.jpg"
+                      alt="Постер"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
-                </div> -->
-    <!-- <div class="project__card">
+                </div>
+                <div class="project__card">
                   <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
                   <p class="project__text">Дизайн</p>
                 </div>
@@ -174,13 +218,35 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/seafood3.jpg"
-                    alt="Ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port3-desk.jpg   1x,
+                        ./images/portfolio/desktop/port3-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port3-tab.jpg   1x,
+                        ./images/portfolio/tablet/port3-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port3-mob.jpg   1x,
+                        ./images/portfolio/mob/port3-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port3-mob.jpg"
+                      alt="Ресторан"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -195,14 +261,36 @@
             </li>
             <li class="project__item">
               <a href="#" class="link project__link">
-                <div class="project__underlay"> -->
-    <!-- <img
-                    class="project__img"
-                    src="./images/portfolio/prime4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                <div class="project__underlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port4-desk.jpg   1x,
+                        ./images/portfolio/desktop/port4-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port4-tab.jpg   1x,
+                        ./images/portfolio/tablet/port4-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port4-mob.jpg   1x,
+                        ./images/portfolio/mob/port4-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port4-mob.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -218,14 +306,36 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/boxes5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  /> -->
-    <!-- <p class="project__overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port5-desk.jpg   1x,
+                        ./images/portfolio/desktop/port5-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port5-tab.jpg   1x,
+                        ./images/portfolio/tablet/port5-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port5-mob.jpg   1x,
+                        ./images/portfolio/mob/port5-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port5-mob.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
+
+                  <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
@@ -240,19 +350,41 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/comp6.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port6-desk.jpg   1x,
+                        ./images/portfolio/desktop/port6-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port6-tab.jpg   1x,
+                        ./images/portfolio/tablet/port6-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port6-mob.jpg   1x,
+                        ./images/portfolio/mob/port6-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port6-mob.jpg"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
-                  </p> -->
-    <!-- </div>
+                  </p>
+                </div>
                 <div class="project__card">
                   <h2 class="project__title">Inspiration has no Borders</h2>
                   <p class="project__text">Веб-сайт</p>
@@ -262,13 +394,35 @@
             <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/edition7.jpg"
-                    alt="Издание"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port7-desk.jpg   1x,
+                        ./images/portfolio/desktop/port7-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port7-tab.jpg   1x,
+                        ./images/portfolio/tablet/port7-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port7-mob.jpg   1x,
+                        ./images/portfolio/mob/port7-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port7-mob.jpg"
+                      alt="Издание"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -280,17 +434,39 @@
                   <p class="project__text">Дизайн</p>
                 </div>
               </a>
-            </li> -->
-    <!-- <li class="project__item">
+            </li>
+            <li class="project__item">
               <a href="#" class="link project__link">
                 <div class="project__underlay">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/lab8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port8-desk.jpg   1x,
+                        ./images/portfolio/desktop/port8-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port8-tab.jpg   1x,
+                        ./images/portfolio/tablet/port8-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port8-mob.jpg   1x,
+                        ./images/portfolio/mob/port8-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port8-mob.jpg"
+                      alt="Издание"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -305,14 +481,36 @@
             </li>
             <li class="project__item">
               <a href="#" class="link project__link">
-                <div class="project__underlay"> -->
-    <!-- <img
-                    class="project__img"
-                    src="./images/portfolio/laptop9.jpg"
-                    alt="Бизнес"
-                    width="370"
-                    height="294"
-                  />
+                <div class="project__underlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/port9-desk.jpg   1x,
+                        ./images/portfolio/desktop/port9-deskx2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/port9-tab.jpg   1x,
+                        ./images/portfolio/tablet/port9-tabx2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob/port9-mob.jpg   1x,
+                        ./images/portfolio/mob/port9-mobx2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project__img"
+                      src="./images/portfolio/mob/port9-mob.jpg"
+                      alt="Бизнес"
+                    />
+                  </picture>
+
                   <p class="project__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -334,9 +532,9 @@
         <div class="footer-container__address">
           <a href="./index.html" lang="en" class="logo link"
             ><span class="logo__accent">Web</span><span class="logo__color-light">Studio</span></a
-          > -->
-    <!--ADDRESS-->
-    <!-- <address class="address">
+          >
+          <!--ADDRESS-->
+          <address class="address">
             <ul class="address__list list">
               <li class="address__item">
                 <a
@@ -404,7 +602,6 @@
         </div>
       </div>
     </footer>
-    <script></script> -->
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
