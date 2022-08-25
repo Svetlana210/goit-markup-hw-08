@@ -21,9 +21,14 @@
 }
 .mobile-menu__container{
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
+
 }
 .mobile-menu__close-btn{
     position: absolute;
@@ -56,7 +61,7 @@
     margin-bottom: 32px;
 }
 .mobile-menu__list_nav{
-    margin-bottom: 302px;
+    margin-bottom: auto;
 }
 .mobile-menu__item-tel{
     margin-bottom: 32px;
