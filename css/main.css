@@ -1102,7 +1102,6 @@ button {
   margin-bottom: 30px;
 }
 .modal-form__checkbox-desc::before {
-  display: block;
   content: "";
   background-image: url(../images/main-page/Vector.svg);
   width: 16px;
@@ -1141,5 +1140,6 @@ button {
 @media screen and (max-width: 479px) {
   .modal {
     width: 90%;
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */
