@@ -159,7 +159,7 @@
             background-image: url(../images/main-page/Vector.svg);
             width: 16px;
             height: 15px;
-            margin-right: 7px;
+            margin-right: 15px;
             cursor: pointer;
             transition: background-image var(--transition-dur-cub);
             .modal-form__checkbox:checked+& {
@@ -170,6 +170,7 @@
 
 
 .user-policy__text {
+    // margin-left: 12px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -197,7 +198,5 @@
     .modal {
         width: 90%;
     }
-    .modal-form__checkbox-desc{
-        min-width: 425px;
-    }
+    
 }

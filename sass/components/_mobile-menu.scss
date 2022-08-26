@@ -56,6 +56,10 @@
         &:hover{
             color:var(--accent-text-color);
         }
+
+}
+.mobile-menu__link.current{
+    color: var(--accent-text-color);
 }
 .mobile-menu__item-nav:not(:last-child){
     margin-bottom: 32px;
@@ -91,6 +95,7 @@ color: rgba(117,
 .mobile-menu__list_soc{
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
 }
 
 .mobile-menu__item-soc:not(:last-child)::after{
